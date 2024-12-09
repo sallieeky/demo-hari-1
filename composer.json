@@ -1,0 +1,10 @@
+{
+    "name": "ramaid/products",
+    "authors": [
+        {
+            "name": "ramaID",
+            "email": "rama@qisthi.dev"
+        }
+    ],
+    "require": {}
+}
