@@ -22,7 +22,6 @@ function main($products) {
 function showAllProducts($products) {
     echo "=== Produk ===\n";
     foreach ($products as $product) {
-    
         echo "ID: {$product['id']}, Name: {$product['name']}, Price: {$product['price']}, Category: {$product['category']}\n";
     }
 }
@@ -32,7 +31,6 @@ function countTotalProductByElectronicsCategory($products) {
     $totalElectronics = 0;
     foreach ($products as $product) {
         if ($product['category'] === 'Electronics') {
-    
             $totalElectronics += $product['price'];
         }
     }
@@ -45,7 +43,6 @@ function countTotalPriceByFurnitureCategory($products) {
     foreach ($products as $product) {
         if ($product['category'] === 'Furniture') {
             $totalFurniture += $product['price'];
-    
         }
     }
     echo "Total Furniture: $totalFurniture\n";
@@ -62,7 +59,6 @@ function filterProductByElectronicsCategory($products) {
     echo "=== Produk Electronics ===\n";
     foreach ($electronicsProducts as $product) {
         echo "ID: {$product['id']}, Name: {$product['name']}, Price: {$product['price']}\n";
-    
     }
 }
 
